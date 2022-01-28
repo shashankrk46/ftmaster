@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+:root {
+  /* primary */
+  --BrightBlue: hsl(220, 98%, 61%);
+  --CheckBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+  /* light theme */
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --VeryLightGrayishBlue: hsl(236, 33%, 92%);
+  --LightGrayishBlue: hsl(233, 11%, 84%);
+  --DarkGrayishBlue: hsl(236, 9%, 61%);
+  --VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+
+  /* dark theme */
+  --VeryDarkBlue: hsl(235, 21%, 11%);
+  --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+  --LightGrayishBlue: hsl(234, 39%, 85%);
+  --LightGrayishBlue: hsl(236, 33%, 92%); /* hover */
+  --DarkGrayishBlue: hsl(234, 11%, 52%);
+  --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+  --VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+}
+body {
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--VeryDarkBlue);
+  color: #fff;
+}
+
+.topImage {
+  background-image: url(./images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 280px;
+  position: relative;
+  z-index: -10;
+}
+.main-container {
+  position: absolute;
+  top: 80px;
+  left: 400px;
+  width: 500px;
+  height: 500px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 35px;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.todo-input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 22px;
+  background-color: var(--VeryDarkDesaturatedBlue);
+}
+.menu-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--VeryDarkDesaturatedBlue);
+  padding: 20px;
+}
+.allTasks {
+  display: flex;
+}
+.allspace {
+  margin-right: 16px;
+}
+.li {
+  background-color: var(--VeryDarkDesaturatedBlue);
+  padding: 20px;
+  border-bottom: 1px solid var(--VeryDarkGrayishBlue);
+  border-radius: 2px 0px 2px 0px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
